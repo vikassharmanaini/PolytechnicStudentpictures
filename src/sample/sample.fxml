@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="556.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #193237ff 0.0%, #2e4e58ff 50.0%, #39687cff 100.0%)linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #193237ff 0.0%, #2e4e58ff 50.0%, #39687cff 100.0%);" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label ellipsisString="" layoutX="23.0" layoutY="28.0" lineSpacing="1.0" prefHeight="40.0" prefWidth="258.0" text="Polytecnic face data" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5497237569060773" centerY="0.5355450236966824" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9605262875556946" green="0.954967737197876" blue="0.6270102262496948" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="110.0" layoutY="111.0" prefHeight="22.0" prefWidth="85.0" text="Branch Code">
+         <textFill>
+            <LinearGradient endX="0.40284360189573465" endY="0.6492890995260663">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9605262875556946" green="0.954967737197876" blue="0.6270102262496948" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="106.0" prefHeight="31.0" prefWidth="85.0" text="School Code">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.40284360189573465" endY="0.6492890995260663">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9605262875556946" green="0.954967737197876" blue="0.6270102262496948" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label alignment="CENTER" layoutX="236.0" layoutY="104.0" prefHeight="26.0" prefWidth="224.0" text="Paste your file Location" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="0.40284360189573465" endY="0.6492890995260663">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9605262875556946" green="0.954967737197876" blue="0.6270102262496948" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Garamond Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Scode" layoutX="14.0" layoutY="143.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #fcdfe8ff 0.0%, #b6fefcff 100.0%);" />
+      <TextField fx:id="bcode" layoutX="115.0" layoutY="143.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #fcdfe8ff 0.0%, #b6fefcff 100.0%);" />
+      <TextField fx:id="pathtxt" layoutX="215.0" layoutY="143.0" prefHeight="25.0" prefWidth="304.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #fcdfe8ff 0.0%, #b6fefcff 100.0%);" />
+      <Button fx:id="chose" layoutX="526.0" layoutY="143.0" mnemonicParsing="false" onAction="#choose" prefHeight="18.0" prefWidth="24.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #fcdfe8ff 0.0%, #b6fefcff 100.0%);" text="Button">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <ProgressBar fx:id="pr" layoutX="24.0" layoutY="183.0" prefHeight="25.0" prefWidth="523.0" progress="0.0" visible="false" />
+      <Button fx:id="start" layoutX="206.0" layoutY="195.0" mnemonicParsing="false" onAction="#Start" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #fcdfe8ff 0.0%, #b6fefcff 100.0%);" text="Start Button">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" alignment="CENTER" layoutX="206.0" layoutY="226.0" mnemonicParsing="false" onAction="#close" prefHeight="32.0" prefWidth="95.0" text="Close" textAlignment="CENTER" textFill="#8f0d0d" visible="false">
+         <font>
+            <Font name="Forte" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="err" layoutX="34.0" layoutY="226.0" prefHeight="17.0" prefWidth="523.0" text="Error :-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="8.0" layoutY="77.0" mnemonicParsing="false" onAction="#twnine" text="2019" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.1516587677725118">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.9984892010688782" blue="0.9700000286102295" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8823099136352539" green="0.9342105388641357" blue="0.4152046740055084" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="109.0" layoutY="77.0" mnemonicParsing="false" onAction="#twtw" text="2020">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.1516587677725118">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.9984892010688782" blue="0.9700000286102295" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8823099136352539" green="0.9342105388641357" blue="0.4152046740055084" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="252.0" layoutY="77.0" mnemonicParsing="false" onAction="#twone" text="2021">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.1516587677725118">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.9984892010688782" blue="0.9700000286102295" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8823099136352539" green="0.9342105388641357" blue="0.4152046740055084" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </RadioButton>
+      <Label layoutX="365.0" layoutY="20.0" prefHeight="32.0" prefWidth="150.0" text="Created By Vikas Sharma" textFill="#b0b2bc">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DISAPPEAR" />
+   </cursor>
+</Pane>
